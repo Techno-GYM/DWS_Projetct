@@ -1,0 +1,46 @@
+{{>/admin/header}}
+
+      <div class="main-panel">        
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-md-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Editar Clase</h4>
+                  
+                  <form class="forms-sample">
+                    <div class="form-group">
+                      <label for="input_name">Nombre</label>
+                      <input type="text" class="form-control" id="input_name" placeholder="Nombre" value="{{activity.name}}">
+                    </div>
+                    <div class="form-group">
+                      <label for="input_description">Descripcion</label>
+                      <input type="text" class="form-control" id="input_description" placeholder="Descripcion" value="{{activity.description}}">
+                    </div>
+                    <div class="form-group">
+                      <label for="input_img">Imagen</label>
+                      <input type="text" class="form-control" id="input_img" placeholder="Link Imagen" value="{{activity.img}}">
+                    </div>
+                    <div class="form-group">
+                      <label for="input_h_begin">Hora Inicio</label>
+                      <input type="time" class="form-control" id="input_h_begin" value="{{activity.beginning}}">
+                    </div>
+                    
+                     <div class="form-group">
+                      <label for="input_h_end">Hora Final</label>
+                      <input type="time" class="form-control" id="input_h_end" value="{{activity.end}}">
+                    </div>
+                    
+                    <input type="hidden" class="form-control" id="id" value="{{activity.id}}">
+                    
+                    <button type="submit" class="btn btn-primary mr-2" onclick="editActivity()">Guardar</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            
+            
+          
+       
+       
+{{>/admin/footer}}

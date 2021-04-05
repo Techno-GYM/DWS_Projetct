@@ -1,0 +1,15 @@
+.bg-gradient{
+		background: -webkit-linear-gradient(to left, rgb(255, 128, 64), rgb(221, 221, 0));
+	background: linear-gradient(to left, rgb(255, 128, 64), rgb(221, 221, 0));
+}
+
+.btn-join{
+	background: linear-gradient(to left, rgb(255, 128, 64), rgb(221, 221, 0));
+    border-color: rgb(255, 128, 64);
+}
+
+.card-text{
+	    max-height: 100px;
+	    min-height: 100px;
+    overflow: auto;
+}

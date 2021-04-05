@@ -1,0 +1,36 @@
+{{>header}}
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">TecnoGym</h1>
+      <p class="lead text-muted">
+        Porque en <strong>TecnoGym</strong> cada día que entrenas cuenta, y no solo para tu cuerpo. <br/>
+		Gracias a nuestra filosofía <strong>Hit4Change</strong> la energía física y humana que se genera en cada sesión es transformada en ayuda real y enviada a quienes más la necesitan..</p>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+		
+      <div class="row">
+      	{{#activities}}
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="card-img-top" style="height: 225px; width: 100%; display: block;" src="{{img}}" data-holder-rendered="true">
+            <div class="card-body">
+              <p class="card-text">{{description}}</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="/join/{{idActivity}}"><button type="button" class="btn btn-sm btn-outline-secondary">Unirme</button></a>
+                  <a href="/activity/{{idActivity}}"><button type="button" class="btn btn-sm btn-outline-secondary">Mas informacion</button></a>
+                </div>
+                <small class="text-muted">{{beginning}} - {{end}}</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        {{/activities}}
+      </div>
+    </div>
+  </div>
+
+{{>footer}}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title> TecnoGym </title>
+   <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+   <link href="/css/index.css" rel="stylesheet" type="text/css" />
+   <script src="/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <header>
+      
+      <nav class="navbar navbar-expand-lg navbar-light bg-gradient">
+	  <a class="navbar-brand" href="#"><img width="50px" src="/images/logo.png"/></a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">Inicio</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="/login">Logueate/Registrate</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+    </header>
+
+    <main role="main">
+
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">{{activity.name}}</h1>
+          <p class="lead text-muted"> {{activity.description}} </p>
+          <p class="lead text-muted"> {{activity.beginning}} - {{activity.end}} </p>
+        </div>
+      </section>
+
+    
+
+    </main>
+
+    <footer class="text-muted">
+      <div class="container">
+        
+        <p>Contacto</p>
+        <p>JEJE</p>
+      </div>
+    </footer>
+
+
+  
+
+</html>
